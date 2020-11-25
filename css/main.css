@@ -15,3 +15,102 @@ body {
 .text-slanted {
   font-family: "Calligraffitti", cursive;
 }
+.btn-yellow{
+  background: var(--mainYellow);
+  /* same as BootStrap text-capitalize */
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  border-radius: 0!important;
+}
+.btn-yellow:hover{
+  background: var(--mainBlack);
+}
+/* ##HOME## */
+/* navbar */
+.navbar-toggler{
+  outline: none !important;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--mainYellow) !important;
+}
+.nav-link{
+  font-size: 1.6rem;
+  border-bottom: 0.1rem solid var(--mainWhite);
+}
+.nav-active{
+  border-bottom: 0.1rem solid var(--mainYellow);
+}
+.navbar-icon{
+  font-size: 1.6rem;
+}
+.navbar-cart-icon{
+  color: var(--mainBlack);
+  position: relative;
+}
+.navbar-cart-icon:hover{
+  color: var(--mainGrey);
+}
+.cart-items{
+  color: var(--mainWhite);
+  position: absolute;
+  /* top is set to negitive to place icon above cart icon */
+  top: -15%;
+  /* right is negitive to place icon on the right side of cart icon */
+  right: -25%;
+  padding: 0.2rem 0.3rem;
+  background: var(--mainYellow);
+  font-size: 0.1rem;
+  border-radius: 50%;
+}
+/* banner */
+.banner{
+  background: url('../img/pageBcg/bannerBcg.jpeg');
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vh - 101px);
+  /* for paralex effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+/* featured section */
+.old-price{
+  text-decoration: line-through;
+}
+.featured-container{
+  background: var(--TransGrey);
+  position: relative;
+  /* this hides any elements that are outside the parent container */
+  overflow: hidden;
+}
+.featured-search-icon{
+  background: var(--mainWhite);
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  font-size: 1.2rem;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+.featured-container:hover .featured-search-icon{
+  transform: translateX(0%);
+}
+.featured-store-link{
+  background: var(--mainYellow);
+  color: var(--mainBlack);
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  right: 0;
+  top: 70%;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+}
+.featured-container:hover .featured-store-link{
+  transform: translateX(0%);
+}
+.featured-store-link:hover{
+  color: var(--mainBlack);
+}
